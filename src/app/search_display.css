@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: inherit;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+.link1 {
+    color: black;
+    padding: 5px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+form {
+    background-color: white;
+    border-radius: 5px;
+    display: inline;
+    flex-direction: row;
+    padding: 6px 10px;
+}
