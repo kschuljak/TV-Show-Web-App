@@ -13,3 +13,4 @@ export class TvmazeService {
     this.httpClient.get(`https://api.tvmaze.com/search/shows?q=${name}&appid=${environment.appId}`)
   }
 }
+
