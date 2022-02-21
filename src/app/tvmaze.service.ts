@@ -13,5 +13,7 @@ export class TvmazeService {
   getShowInfo(name: string){
     return this.httpClient.get<ITvSearchData>(`https://api.tvmaze.com/search/shows?q=${name}&appid=${environment.appId}`)
   }
+
+  private transformToItvsearch(data: ITvSearchData)
 }
 
