@@ -14,7 +14,7 @@ export class AppComponent {
   searchAPI(event: Event) {
     // event.preventDefault();
 
-    fetch(`https://api.tumaze.com/search/shows?q=${this.queryText}`)
+    fetch(`https://api.tvmaze.com/search/shows?q=${this.queryText}`)
       .then((response) => response.json())
       .then((data: any) => {
         console.log(data);
