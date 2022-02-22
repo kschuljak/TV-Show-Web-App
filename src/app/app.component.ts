@@ -8,9 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'tv-show-web-app';
   queryText = '';
-  showResults = [
-
-  ];
+  showResults = [];
   searchAPI(event: Event) {
     // event.preventDefault();
 
@@ -19,10 +17,7 @@ export class AppComponent {
       .then((data: any) => {
         console.log(data);
         if (data.length) {
-          this.showResults = data;
-        } else {
-          this.showResults = [];
-        }
+        this.showResults = data;}
       });
   }
 }
