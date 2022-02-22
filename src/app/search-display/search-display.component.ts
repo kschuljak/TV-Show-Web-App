@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-search-display',
   templateUrl: './search-display.component.html',
-  styleUrls: ['./search-display.component.css']
+  styleUrls: ['./search-display.component.css'],
 })
 export class SearchDisplayComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
+  queryText = '';
+  @Input()
+  results: Array<any> = [];
 }

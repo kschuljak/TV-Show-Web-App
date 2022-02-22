@@ -1,14 +1,9 @@
-<body>
-    <header>
-        <h1>MTDB</h1>
-        <h2>Movie and TV Show Database</h2>
-        <div class="topnav">
-            <a class="active" href="app.component.html">Home</a>
-            <form id="form" role="search">
-                <input type="search" id="query" name="q" placeholder="Movie or TV show..."
-                    aria-label="Search through site content">
-                <button>Search</button>
-        </div>
-        <app-root></app-root>
-
-</body>
+<div class="search-results" *ngIf="results.length">
+    <div class="result-summary">
+        Found {{results.length}} {{results.length == 1 ? 'result' : 'result'}}
+    </div>
+    <div class="result" *ngFor="let result of results;">
+        <img [src]="result.show.image.medium">
+        <div class="content">{{result.show.name}}</div>
+    </div>
+</div>
