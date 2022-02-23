@@ -14,10 +14,10 @@ export class SearchDisplayComponent implements OnInit {
     this.current = {
       showName: '',
       showStatus: '',
-      showGenres: [],
+      //showGenres: ,
       showSummary: '',
       scheduleTime: '',
-      scheduleDays: [],
+      //scheduleDays: ,
       showNetwork: '' 
     }
   }

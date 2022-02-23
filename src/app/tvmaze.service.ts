@@ -21,10 +21,10 @@ export class TvmazeService {
     return {
       showName: data.show.name,
       showStatus: data.show.status,
-      showGenres: data.show.genres[0], //not sure how to return all elements of an array here - will investigate
+     // showGenres: data.show.genres[0], //not sure how to return all elements of an array here - will investigate
       showSummary: data.show.summary,
       scheduleTime: data.show.schedule.time,
-      scheduleDays: data.show.schedule.days[0], //also returns an array
+     // scheduleDays: data.show.schedule.days[0], //also returns an array
       showNetwork: data.show.network.name
     }
   }
