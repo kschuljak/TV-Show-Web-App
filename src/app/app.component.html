@@ -1,14 +1,9 @@
   <h1>MTDB</h1>
   <h2>Movies and TV Shows Database</h2>
   
-  <div class="flex-container">
-    <form id="form" role="search" (submit)="searchAPI($event)">
-<input type="search" id="query" name="g" [(ngModel)]="queryText"
-       placeholder="Movie or TV Show..."
-       aria-label="Search through site content">
-      <button type="submit">Search</button>
-      </form>
-  </div> <!-- ends flex-container -->
+  <div>
+    <app-show-search></app-show-search>
+  </div>
   
   <div class="card-container">
     <app-search-display></app-search-display>

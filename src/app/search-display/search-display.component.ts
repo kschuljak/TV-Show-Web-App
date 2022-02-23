@@ -12,12 +12,10 @@ export class SearchDisplayComponent implements OnInit {
   current: Itvsearch
   constructor(private tvMazeService: TvmazeService) {
     this.current = {
-      show: { },
       showName: '',
       showStatus: '',
       showGenres: [],
       showSummary: '',
-      showSchedule: [],
       scheduleTime: '',
       scheduleDays: [],
       showNetwork: '' 
