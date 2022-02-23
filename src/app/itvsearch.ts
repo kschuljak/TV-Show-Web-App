@@ -1,5 +1,4 @@
 export interface Itvsearch {
-    showSearch: Array<object>
       show: object
         showName: string
         showStatus: string
