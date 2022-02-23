@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { ITvSearchData } from './itv-search-data';
 import { map } from 'rxjs/operators';
-import { generateKeyPairSync } from 'crypto';
+//import { generateKeyPairSync } from 'crypto';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class TvmazeService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getShowInfo(name: string){
+  getShowInfo(showName: string){
     return this.httpClient.get<ITvSearchData>(`https://api.tvmaze.com/search/shows?q=${name}&appid=${environment.appId}`)
     .pipe(map(data => this.transformToItvsearch(data) ))
   }

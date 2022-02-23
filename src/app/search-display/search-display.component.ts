@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Itvsearch } from '../itvsearch';
 import { TvmazeService } from '../tvmaze.service';
 
