@@ -14,13 +14,14 @@ export class TvmazeService {
 
   getShowInfo(name: string){
     return this.httpClient.get<ITvSearchData>(`https://api.tvmaze.com/search/shows?q=${name}&appid=${environment.appId}`)
+    .pipe(map(data => this.transformToItvsearch(data) ))
   }
 
   private transformToItvsearch(data: ITvSearchData){
     return {
       showName: data.show.name,
       showStatus: data.show.status,
-      showGenres: data.genres[0], //not sure how to return all elements of an array here - will investigate
+      showGenres: data.show.genres[0], //not sure how to return all elements of an array here - will investigate
       showSummary: data.show.summary,
       scheduleTime: data.show.schedule.time,
       scheduleDays: data.show.schedule.days[0], //also returns an array
