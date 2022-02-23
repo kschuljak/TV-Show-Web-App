@@ -9,17 +9,15 @@ import { TvmazeService } from '../tvmaze.service';
 })
 export class SearchDisplayComponent implements OnInit {
   
-  queryText = '';
-  @Input()
-  results: Array<any> = [];
-
   current: Itvsearch
   constructor(private tvMazeService: TvmazeService) {
     this.current = {
+      show: { },
       showName: '',
       showStatus: '',
       showGenres: [],
       showSummary: '',
+      showSchedule: [],
       scheduleTime: '',
       scheduleDays: [],
       showNetwork: '' 
