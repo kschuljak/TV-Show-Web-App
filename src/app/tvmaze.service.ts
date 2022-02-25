@@ -12,8 +12,8 @@ export class TvmazeService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getShowInfo(showName: string){
-    return this.httpClient.get<ITvSearchData>(`https://api.tvmaze.com/search/shows?q=${name}&appid=${environment.appId}`)
+  getShowInfo(showName: string){ //
+    return this.httpClient.get<ITvSearchData>(`https://api.tvmaze.com/search/shows?q=${showName}&appid=${environment.appId}`)
     .pipe(map(data => this.transformToItvsearch(data) ))
   }
 
