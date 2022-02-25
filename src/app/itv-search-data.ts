@@ -11,5 +11,6 @@ export interface ITvSearchData {
             name: string
         },
         summary: string
-    }
+    }   
+    
 }
