@@ -14,17 +14,18 @@ export class SearchDisplayComponent implements OnInit {
     this.current = {
       showName: '',
       showStatus: '',
-      //showGenres: ,
+      //showGenres: [],
       showSummary: '',
       scheduleTime: '',
-      //scheduleDays: ,
+      //scheduleDays: [],
       showNetwork: '' 
     }
   }
 
+  //dummy input data 'house'
   ngOnInit(): void {
-    this.tvMazeService.getShowInfo('house') //dummy input
-    .subscribe(data => this.current = data)
+    this.tvMazeService.getShowInfo('house').
+    subscribe(data => this.current = data);
   }
 
   

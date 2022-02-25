@@ -1,5 +1,4 @@
-export interface ITvSearchData {
-    show: {
+export interface ITvSearchData {    
         name: string,
        // genres: Array<string>,
         status: string,
@@ -11,6 +10,4 @@ export interface ITvSearchData {
             name: string
         },
         summary: string
-    }   
-    
 }

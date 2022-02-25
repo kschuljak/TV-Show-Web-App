@@ -13,19 +13,19 @@ export class TvmazeService {
   constructor(private httpClient: HttpClient) { }
 
   getShowInfo(showName: string){ //
-    return this.httpClient.get<ITvSearchData>(`https://api.tvmaze.com/search/shows?q=${showName}&appid=${environment.appId}`)
+    return this.httpClient.get<ITvSearchData>(`https://api.tvmaze.com/singlesearch/shows?q=${showName}&appid=${environment.appId}`)
     .pipe(map(data => this.transformToItvsearch(data) ))
   }
 
   private transformToItvsearch(data: ITvSearchData){
     return {
-      showName: data.show.name,
-      showStatus: data.show.status,
+      showName: data.name,
+      showStatus: data.status,
      // showGenres: data.show.genres[0], //not sure how to return all elements of an array here - will investigate
-      showSummary: data.show.summary,
-      scheduleTime: data.show.schedule.time,
+      showSummary: data.summary,
+      scheduleTime: data.schedule.time,
      // scheduleDays: data.show.schedule.days[0], //also returns an array
-      showNetwork: data.show.network.name
+      showNetwork: data.network.name
     }
   }
 }
