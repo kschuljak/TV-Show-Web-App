@@ -1,3 +1,8 @@
+<!--
+    not sure how you want to style this, commenting out your code for testing purposes 
+    -copied code into show-search.component.html, I think this is where it should be since that is the search bar functionality?
+
+
 <div class="search-results" *ngIf="results.length">
     <div class="result-summary">
         Found {{results.length}} {{results.length == 1 ? 'result' : 'result'}}
@@ -5,5 +10,28 @@
     <div class="result" *ngFor="let result of results;">
         <img [src]="result?.show.image.medium">
         <div class="content">{{result.show.name}}</div>
+    </div>
+</div>
+-->
+
+<div id="test">
+    <p>TESTING FOR DISPLAY PURPOSES- DELETE THIS BIT LATER</p>
+</div>
+
+<div *ngIf = "current.showName">
+    <div id="current show info">
+        <span>{{current.showName}}</span>
+        <br>
+        <span>{{current.showStatus}}</span>
+        <br>
+        <!--<span>{{current.showGenres}}</span>-->
+        <br>
+        <span>{{current.showSummary}}</span>
+        <br>
+        <span>{{current.scheduleTime}}</span>
+        <br>
+        <!--<span>{{current.scheduleDays}}</span>-->
+        <br>
+        <span>{{current.showNetwork}}</span>
     </div>
 </div>

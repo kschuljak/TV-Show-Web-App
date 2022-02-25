@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tv-show-web-app';
+}
+ 
+ /* commenting out for testing purposes 
   queryText = '';
   showResults = [];
   searchAPI(event: Event) {
@@ -21,3 +24,4 @@ export class AppComponent {
       });
   }
 }
+*/
