@@ -8,7 +8,7 @@
         Found {{results.length}} {{results.length == 1 ? 'result' : 'result'}}
     </div>
     <div class="result" *ngFor="let result of results;">
-        <img [src]="result?.show.image.medium">
+        <img [src]="result.show.image.medium">
         <div class="content">{{result.show.name}}</div>
     </div>
 </div>
