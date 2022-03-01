@@ -12,12 +12,14 @@ export class ShowSearchComponent implements OnInit {
   search = new FormControl('', [Validators.minLength(3)])
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {{
     this.search.valueChanges
     .pipe(debounceTime(1000))
     .subscribe((searchValue: string) => {
       if (!this.search.invalid){
         this.searchEvent.emit(searchValue)
-  }
+    }
 
-}
+    }
+    )}
+  }}
