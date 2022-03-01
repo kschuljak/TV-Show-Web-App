@@ -10,4 +10,7 @@ export interface ITvSearchData {
             name: string
         },
         summary: string
+        image: {
+            medium: string
+        }
 }

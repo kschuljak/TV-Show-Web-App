@@ -6,5 +6,6 @@ export interface Itvsearch {
         scheduleTime: string
         scheduleDays: Array<string>
         showNetwork: string
+        showImage: string
 }
 
