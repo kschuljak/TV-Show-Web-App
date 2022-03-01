@@ -18,7 +18,8 @@ export class SearchDisplayComponent implements OnInit {
       showSummary: '',
       scheduleTime: '',
       scheduleDays: [],
-      showNetwork: '' 
+      showNetwork: '', 
+      showImage: ''
     }
   }
 
