@@ -1,10 +1,10 @@
 export interface ITvSearchData {    
         name: string,
-       // genres: Array<string>,
+        genres: [],
         status: string,
         schedule: {
             time: string,
-        //    days: Array<string>
+            days: []
         },
         network: {
             name: string
