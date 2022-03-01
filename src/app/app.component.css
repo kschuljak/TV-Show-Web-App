@@ -56,6 +56,10 @@ p {
   opacity: 0.8;
 }
 
+.mat-hint {
+  color:#333;
+}
+
 .content {
   display: flex;
   margin: 82px auto 32px;
