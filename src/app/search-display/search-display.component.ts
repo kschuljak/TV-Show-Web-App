@@ -8,8 +8,7 @@ import { TvmazeService } from '../tvmaze.service';
   styleUrls: ['./search-display.component.css'],
 })
 export class SearchDisplayComponent implements OnInit {
-  
-  current: Itvsearch
+  current: Itvsearch;
   constructor(private tvMazeService: TvmazeService) {
     this.current = {
       showName: '',
@@ -18,16 +17,15 @@ export class SearchDisplayComponent implements OnInit {
       showSummary: '',
       scheduleTime: '',
       scheduleDays: [],
-      showNetwork: '', 
-      showImage: ''
-    }
+      showNetwork: '',
+      showImage: '',
+    };
   }
 
   //dummy input data 'house'
   ngOnInit(): void {
-    this.tvMazeService.getShowInfo('house').
-    subscribe(data => this.current = data);
+    this.tvMazeService
+      .getShowInfo('house')
+      .subscribe((data) => (this.current = data));
   }
-
-  
 }
