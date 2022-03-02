@@ -24,7 +24,8 @@ export class TvmazeService {
       scheduleTime: data.schedule.time,
       scheduleDays: data.schedule.days,
       showNetwork: data.network.name,
-      showImage: data.image.medium
+      showImage: data.image.medium,
+      showLanguage: data.language
     }
   }
 }

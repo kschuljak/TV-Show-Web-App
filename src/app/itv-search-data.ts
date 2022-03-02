@@ -12,5 +12,6 @@ export interface ITvSearchData {
         summary: string
         image: {
             medium: string
-        }
+        },
+        language: string
 }
