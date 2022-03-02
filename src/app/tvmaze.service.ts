@@ -26,7 +26,9 @@ export class TvmazeService {
       showNetwork: data.network.name,
       showImage: data.image.medium,
       showLanguage: data.language,
-      showRuntime: data.runtime
+      showRuntime: data.runtime,
+      showRating: data.rating.average
+      
     }
   }
 }

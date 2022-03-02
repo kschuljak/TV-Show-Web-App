@@ -9,5 +9,6 @@ export interface Itvsearch {
         showImage: string
         showLanguage: string
         showRuntime: number
+        showRating: number
 }
 

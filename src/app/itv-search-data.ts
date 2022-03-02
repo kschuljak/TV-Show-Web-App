@@ -14,5 +14,6 @@ export interface ITvSearchData {
             medium: string
         },
         language: string,
-        runtime: number
+        runtime: number,
+        rating: number
 }

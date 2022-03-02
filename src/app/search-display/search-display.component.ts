@@ -21,6 +21,7 @@ export class SearchDisplayComponent implements OnInit {
       showImage: '',
       showLanguage: '',
       showRuntime: 0,
+      showRating: 0,
     };
   }
 
