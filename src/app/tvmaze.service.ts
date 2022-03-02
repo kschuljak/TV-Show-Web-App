@@ -24,7 +24,7 @@ export class TvmazeService {
       scheduleTime: data.schedule.time,
       scheduleDays: data.schedule.days,
       showNetwork: data.network.name,
-      ShowImage: `https://static.tvmaze.com/uploads/images/medium_portrait/389/973805.jpg`
+      showImage: data.image.medium
     }
   }
 }
