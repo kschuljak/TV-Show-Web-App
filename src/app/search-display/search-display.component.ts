@@ -20,7 +20,7 @@ export class SearchDisplayComponent implements OnInit {
       showNetwork: '',
       showImage: '',
       showLanguage: '',
-      showRuntime: '',
+      showRuntime: 0,
     };
   }
 
