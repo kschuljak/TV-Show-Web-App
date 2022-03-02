@@ -15,5 +15,7 @@ export interface ITvSearchData {
         },
         language: string,
         runtime: number,
-        rating: number
+        rating:{
+            average: number
+        }
 }
