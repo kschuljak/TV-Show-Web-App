@@ -13,29 +13,52 @@
     </div>
 </div>
 -->
-
+<div *ngIf="!current.showName">
+    No data available
+</div>
 
 <div *ngIf="current.showName">
-    <div id="current show info">
-        <span>{{current.showName}}</span>
-        <br>
-        <span>{{current.showStatus}}</span>
-        <br>
-        <span>{{current.showGenres}}</span>
-        <br>
-        <span>{{current.showSummary}}</span>
-        <br>
-        <span>{{current.scheduleTime}}</span>
-        <br>
-        <span>{{current.scheduleDays}}</span>
-        <br>
-        <span>{{current.showRuntime}}</span>
-        <br>
-        <span>{{current.showNetwork}}</span>
-        <br>
-        <span>{{current.showLanguage}}</span>
-        <br>
-        <img [src]='current.showImage' />
+    
+    <div style="display: flex;">
         
+        <mat-card style="flex: 1 1 auto;">
+            <img [src]='current.showImage' />
+        </mat-card>
+        
+        <span class="spacer"></span>
+        
+        <mat-card style="flex: 1 1 auto;">
+            <mat-card-title>
+                {{current.showName}}
+            </mat-card-title>
+
+            <div class="spacer"></div>
+            <br/>
+
+            <span>{{current.showSummary}}</span>
+
+            <div class="spacer"></div>
+            <br/>
+
+            <span>Language: {{current.showLanguage}}</span>
+            <div class="spacer"></div>
+            <span>Genres: {{current.showGenres}}</span>
+            <div class="spacer"></div>
+
+            <br/>
+
+            <mat-divider></mat-divider>
+
+            <br/>
+
+            <div class="spacer"></div>
+            <span>Status: {{current.showStatus}}</span>
+            <div class="spacer"></div>
+            <span>Runtime: {{current.showRuntime}} minutes</span>
+            <div class="spacer"></div>
+            <span>Next showing: {{current.scheduleTime}} {{current.scheduleDays}} on {{current.showNetwork}}</span>
+        </mat-card>      
+
     </div>
+    
 </div>
