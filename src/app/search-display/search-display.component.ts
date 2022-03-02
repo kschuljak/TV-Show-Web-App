@@ -19,6 +19,7 @@ export class SearchDisplayComponent implements OnInit {
       scheduleDays: [],
       showNetwork: '',
       showImage: '',
+      showLanguage: '',
     };
   }
 
