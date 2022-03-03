@@ -25,7 +25,7 @@ export class AppComponent {
 
   constructor(private tvmazeService: TvmazeService){}
   doSearch(searchValue: string){
-    const userInput = .map(s => s.trim())
+    const userInput = searchValue;
     this.tvmazeService
     .getShowInfo(userInput)
     .subscribe((data) => (this.currentResult = data)) 
