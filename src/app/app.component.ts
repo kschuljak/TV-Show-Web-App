@@ -28,7 +28,7 @@ export class AppComponent {
     const userInput = .map(s => s.trim())
     this.tvmazeService
     .getShowInfo(userInput)
-    .subscribe((data) => (this.current = data)) 
+    .subscribe((data) => (this.currentResult = data)) 
   }
 
 
