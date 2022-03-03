@@ -25,10 +25,7 @@ export class SearchDisplayComponent implements OnInit {
     };
   }
 
-  //dummy input data 'house'
   ngOnInit(): void {
-    this.tvMazeService
-      .getShowInfo('house')
-      .subscribe((data) => (this.current = data));
+    
   }
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Itvsearch } from './itvsearch';
+import { TvmazeService } from './tvmaze.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,29 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tv-show-web-app';
+  currentResult: Itvsearch = {
+      showName: '',
+      showStatus: '',
+      showGenres: [],
+      showSummary: '',
+      scheduleTime: '',
+      scheduleDays: [],
+      showNetwork: '',
+      showImage: '',
+      showLanguage: '',
+      showRuntime: 0,
+      showRating: 0,
+  }
+
+  constructor(private tvmazeService: TvmazeService){}
+  doSearch(searchValue: string){
+    const userInput = searchValue;
+    this.tvmazeService
+    .getShowInfo(userInput)
+    .subscribe((data) => (this.currentResult = data)) 
+  }
+
+
 }
  
  /* commenting out for testing purposes 
@@ -15,7 +40,7 @@ export class AppComponent {
   searchAPI(event: Event) {
     // event.preventDefault();
 
-    fetch(`https://api.tvmaze.com/search/shows?q=${this.queryText}`)
+    fetch(`https://api.tvmaze.com/search/shows?q=${this.querysText}`)
       .then((response) => response.json())
       .then((data: any) => {
         console.log(data);
