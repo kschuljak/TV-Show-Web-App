@@ -1,5 +1,6 @@
 .mat-card-title{
     color: #E91E63;
+    font-size: 2.5em;
   }
 
 .mat-card{
@@ -8,4 +9,8 @@
 
 #label{
     font-weight: 500;
+}
+
+#summary{
+  font-size: 1.1em;
 }
