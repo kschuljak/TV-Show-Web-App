@@ -103,3 +103,12 @@
  .spacer {
    flex: 1 1 auto;
  }
+
+ #titleAndSearch{
+   text-align: center;
+   justify-content: center;
+ }
+
+ .mat-card-title{
+   color: #E91E63;
+ }
