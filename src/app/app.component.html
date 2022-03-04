@@ -1,4 +1,4 @@
-  <div>
+  <div id="flexbox-container">
     <mat-card id="titleAndSearch">
       <div class="spacer"></div>
       <br/>
@@ -15,14 +15,12 @@
           <app-show-search (searchEvent)="doSearch($event)"></app-show-search>
       </div>
     </mat-card>
-    
-
-      <br/>
-
-      <div id="result">
-        <mat-card id="resultsDisplay">
-          <app-search-display [current]="currentResult"></app-search-display>
-        </mat-card>
-      </div>
-
+      
+    <br/>
+      
+    <div id="result">
+      <mat-card id="resultsDisplay" class="mat-elevation-z0">
+        <app-search-display [current]="currentResult"></app-search-display>
+      </mat-card>
+    </div>
   </div>

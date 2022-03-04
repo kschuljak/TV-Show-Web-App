@@ -98,8 +98,6 @@
 
   .card {
     all: unset;
-    border-radius: 4px;
-    border: 1px solid #eee;
     color: #eee;
     background-color: #282828;
     height: 40px;
@@ -133,7 +131,6 @@
   .card-container .card:not(.highlight-card):hover {
     transform: translateY(-3px);
     color: #eee;
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
   }
 
   .card-container .card:not(.highlight-card):hover .material-icons path {
@@ -295,6 +292,12 @@
 #result{
  color: #eee;
  background-color: #282828;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+#resultsDisplay{
+  display: flex;
 }
 
 #h1{

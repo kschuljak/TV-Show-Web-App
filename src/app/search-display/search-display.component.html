@@ -5,17 +5,17 @@
 
 <div *ngIf="current.showName" id="showDisplay">
     
-    <div id="flex-container" style="display: flex;">
+    <div id="flex-container">
         
         
-        <mat-card id="imageDisplay">
+        <mat-card id="imageDisplay" class="basic-card mat-elevation-z0">
             <img [src]='current.showImage' />
         </mat-card>
         
         <span class="spacer"></span>
         
         
-        <mat-card>
+        <mat-card id="textDisplay" class="basic-card mat-elevation-z0">
             <mat-card-title>
                 {{current.showName}}
             </mat-card-title>
