@@ -116,19 +116,23 @@
 
   .card-container .card:not(:last-child) {
     margin-right: 0;
+    color: #eee;
   }
 
   .card.card-small {
     height: 16px;
     width: 168px;
+    color: #eee;
   }
 
   .card-container .card:not(.highlight-card) {
     cursor: pointer;
+    color: #eee;
   }
 
   .card-container .card:not(.highlight-card):hover {
     transform: translateY(-3px);
+    color: #eee;
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
   }
 
@@ -185,6 +189,7 @@
     margin-top: 8px;
     overflow: hidden;
     background-color: rgb(15, 15, 16);
+    color: #eee;
   }
 
   .terminal::before {
@@ -296,6 +301,7 @@
   font-size: 4em;
   color: #E91E63;
 }
+
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
