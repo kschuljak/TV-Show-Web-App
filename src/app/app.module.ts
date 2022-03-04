@@ -23,8 +23,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
   declarations: [
     AppComponent,
     SearchDisplayComponent,
-    ShowSearchComponent,
-    EmployeesComponent,
+    ShowSearchComponent
   ],
   imports: [
     BrowserModule,
