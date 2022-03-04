@@ -319,11 +319,22 @@
     }
   }
 
-  @media screen and (max-width: 575px) {
-    .mat-card{
-      flex: auto;
+    @media screen and (max-width: 575px) {
+      #flex-container{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+      }
+      .mat-card{
+        width: 90%;
+        align-items: center;
+      }
+      #imageDisplay{
+        align-items: center;
+        justify-content: center;
+      }
     }
-  }
+  
 
 
  
