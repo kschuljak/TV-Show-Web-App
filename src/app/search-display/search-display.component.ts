@@ -9,7 +9,7 @@ import { TvmazeService } from '../tvmaze.service';
 })
 export class SearchDisplayComponent implements OnInit {
   current: Itvsearch;
-  constructor(private tvMazeService: TvmazeService) {
+  constructor() {
     this.current = {
       showName: '',
       showStatus: '',
