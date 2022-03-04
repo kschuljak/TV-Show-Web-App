@@ -7,13 +7,14 @@
     
     <div style="display: flex;">
         
-        <mat-card style="flex: 1 1 auto;">
-            <img [src]='current.showImage' />
-        </mat-card>
-        
+        <div id="imageDisplay">
+            <mat-card>
+                <img [src]='current.showImage' />
+            </mat-card>
+        </div>
         <span class="spacer"></span>
         
-        <mat-card style="flex: 1 1 auto;">
+        <mat-card>
             <mat-card-title>
                 {{current.showName}}
             </mat-card-title>

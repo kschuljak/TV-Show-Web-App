@@ -12,17 +12,17 @@
       </mat-card-subtitle> 
 
       <div id="searchbar">
-        <app-show-search (searchEvent)="doSearch($event)"></app-show-search>
+          <app-show-search (searchEvent)="doSearch($event)"></app-show-search>
       </div>
     </mat-card>
     
 
       <br/>
 
-      <div class="mdc-component__containers__secondary">
-      <mat-card id="resultsDisplay">
-        <app-search-display [current]="currentResult"></app-search-display>
-      </mat-card>
+      <div id="result">
+        <mat-card id="resultsDisplay">
+          <app-search-display [current]="currentResult"></app-search-display>
+        </mat-card>
       </div>
 
   </div>
