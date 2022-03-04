@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Itvsearch } from '../itvsearch';
-import { TvmazeService } from '../tvmaze.service';
 
 @Component({
   selector: 'app-search-display',
@@ -8,7 +7,8 @@ import { TvmazeService } from '../tvmaze.service';
   styleUrls: ['./search-display.component.css'],
 })
 export class SearchDisplayComponent implements OnInit {
-  current: Itvsearch;
+ 
+  @Input() current: Itvsearch
   constructor() {
     this.current = {
       showName: '',
@@ -25,7 +25,5 @@ export class SearchDisplayComponent implements OnInit {
     };
   }
 
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void {}
 }

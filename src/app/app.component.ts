@@ -26,27 +26,8 @@ export class AppComponent {
   constructor(private tvmazeService: TvmazeService){}
   doSearch(searchValue: string){
     const userInput = searchValue;
-    this.tvmazeService
-    .getShowInfo(userInput)
-    .subscribe((data) => (this.currentResult = data)) 
+    this.tvmazeService.getShowInfo(userInput)
+    .subscribe(data => this.currentResult = data) 
   }
-
-
 }
  
- /* commenting out for testing purposes 
-  queryText = '';
-  showResults = [];
-  searchAPI(event: Event) {
-    // event.preventDefault();
-
-    fetch(`https://api.tvmaze.com/search/shows?q=${this.querysText}`)
-      .then((response) => response.json())
-      .then((data: any) => {
-        console.log(data);
-        if (data.length) {
-        this.showResults = data;}
-      });
-  }
-}
-*/

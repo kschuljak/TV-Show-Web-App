@@ -10,8 +10,9 @@ export class TvmazeService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getShowInfo(showName: string){ //
-    return this.httpClient.get<ITvSearchData>(`https://api.tvmaze.com/singlesearch/shows?q=${showName}`)
+  getShowInfo(showName: string){
+    return this.httpClient.get<ITvSearchData>
+    (`https://api.tvmaze.com/singlesearch/shows?q=${showName}`)
     .pipe(map(data => this.transformToItvsearch(data) ))
   }
 
@@ -28,7 +29,6 @@ export class TvmazeService {
       showLanguage: data.language,
       showRuntime: data.runtime,
       showRating: data.rating.average
-      
     }
   }
 }
