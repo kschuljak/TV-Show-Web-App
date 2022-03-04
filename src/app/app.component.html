@@ -1,16 +1,23 @@
   <div class="content" role="main">
-      <h1>MTDB</h1>
-      <div class="spacer"></div>
-      <h2>Movies and TV Shows Database</h2>
-      <div class="spacer"></div>
 
-      <div>
+    <mat-card id="titleAndSearch">
+      <mat-card-title>
+        <h1 id="h1">MTDB</h1>
+      </mat-card-title>
+      <div class="spacer"></div>
+      <br/>
+      <mat-card-subtitle>    
+        <h2 id="h2">Movies and TV Shows Database</h2>
+      </mat-card-subtitle> 
+
+      <div id="searchbar">
         <app-show-search (searchEvent)="doSearch($event)"></app-show-search>
       </div>
+    </mat-card>
 
       <br/>
 
-      <mat-card color="primary">
+      <mat-card id="resultsDisplay">
         <app-search-display [current]="currentResult"></app-search-display>
       </mat-card>
 
