@@ -1,6 +1,7 @@
 .mat-card-title{
     color: #E91E63;
-    font-size: 2.5em;
+    font-size: 2em;
+    line-height: 1.2;
   }
 
 .mat-card{
@@ -13,4 +14,9 @@
 
 #summary{
   font-size: 1.1em;
+}
+
+#flex-container{
+  display: flex;
+  flex-direction: row;
 }

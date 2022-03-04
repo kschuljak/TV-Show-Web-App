@@ -5,14 +5,15 @@
 
 <div *ngIf="current.showName" id="showDisplay">
     
-    <div style="display: flex;">
+    <div id="flex-container" style="display: flex;">
         
-        <div id="imageDisplay">
-            <mat-card>
-                <img [src]='current.showImage' />
-            </mat-card>
-        </div>
+        
+        <mat-card id="imageDisplay">
+            <img [src]='current.showImage' />
+        </mat-card>
+        
         <span class="spacer"></span>
+        
         
         <mat-card>
             <mat-card-title>
@@ -48,7 +49,6 @@
             <div class="spacer"></div>
             <span><span id="label">Next showing:</span> {{current.scheduleTime}} {{current.scheduleDays}} on {{current.showNetwork}}</span>
         </mat-card>      
-
+       
     </div>
-
 </div>
