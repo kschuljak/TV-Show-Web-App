@@ -2,3 +2,7 @@ body{
     color: #eee;
     background-color: #282828;
 }
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white;
+  }
