@@ -1,6 +1,6 @@
 .mat-card-title{
     color: #E91E63;
-    font-size: 2em;
+    font-size: 2.2em;
     line-height: 1.2;
   }
 
@@ -13,7 +13,7 @@
 }
 
 #summary{
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 #flex-container{
@@ -22,6 +22,9 @@
 }
 
 @media screen and (max-width: 575px) {
+  .mat-card-title{
+    text-align: center;
+  }
   #flex-container{
     display: flex;
     flex-flow: column wrap;
@@ -30,6 +33,7 @@
   .mat-card{
     width: 90%;
     align-items: center;
+    padding: auto;
   }
   #imageDisplay{
     display: flex;
