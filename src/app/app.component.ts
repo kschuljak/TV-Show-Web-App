@@ -27,7 +27,7 @@ export class AppComponent {
   doSearch(searchValue: string){
     const userInput = searchValue;
     this.tvmazeService.getShowInfo(userInput)
-    .subscribe(data => this.currentResult = data) 
+    .subscribe((data: Itvsearch) => this.currentResult = data) 
   }
 }
  
