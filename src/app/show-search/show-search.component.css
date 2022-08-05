@@ -8,11 +8,10 @@
     color: #E91E63;
 }
 
-.mat-hint{
+.mat-form-field.mat-hint{
     color: #eee;
 }
 
 .mat-form-field.input{
     color: white;
 }
-
