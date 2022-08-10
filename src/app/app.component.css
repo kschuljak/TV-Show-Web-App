@@ -29,7 +29,9 @@
 
   .spacer {
     flex: 1;
+    height: 30px;
   }
+
 
   .toolbar {
     position: absolute;
@@ -316,6 +318,7 @@
     .card:not(.highlight-card) {
       height: 16px;
       margin: 8px 0;
+      color: #eee;
     }
 
     .card.highlight-card span {
