@@ -19,6 +19,7 @@
 
 ## Form Control
 - Form control requires 2 or more characters before API is called, otherwise error message is displayed
+- API is called after a one second delay, set by debounceTime
 ```ts
 export class ShowSearchComponent implements OnInit {
 
