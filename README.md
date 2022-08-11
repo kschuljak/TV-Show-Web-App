@@ -15,7 +15,8 @@
 - page is styled using Angular Material, along with custom styling
 ![mtdb4](https://user-images.githubusercontent.com/47723396/183993064-b2e20cdd-3c86-47e4-8c8f-8b0971c2ecb9.png)
 
-- Results display
+## Results display
+- search-display.component is updated using the json data returned from the API call after a valid search
 ![mtdb3](https://user-images.githubusercontent.com/47723396/183992949-9ba973e0-da97-43db-b331-41201d0870f6.JPG)
 
 ## Form Control
