@@ -19,8 +19,8 @@
 
 ### search-display.component 
 - displays the information returned from the API call
+- updates after a valid search is performed
 ![mtdb3](https://user-images.githubusercontent.com/47723396/183992949-9ba973e0-da97-43db-b331-41201d0870f6.JPG)
-
 
 
 ## API Interface
