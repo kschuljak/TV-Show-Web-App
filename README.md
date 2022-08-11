@@ -7,7 +7,7 @@
 ## Examples
 
 ## Homepage
-- composed of two main components: show-search.component & search-display.component
+- composed of two main components: 1) show-search.component & 2) search-display.component
 ![mtdb1](https://user-images.githubusercontent.com/47723396/183992434-b21917a9-1526-434d-9577-3d1469cc51c3.JPG)
 
 - Responsive search bar
