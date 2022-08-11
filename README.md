@@ -7,10 +7,8 @@
 ## Homepage
 
 ### show-search.component 
-- contains the page title and searchbar
+- contains the page title and searchbar functionality
 ![mtdb1](https://user-images.githubusercontent.com/47723396/183992434-b21917a9-1526-434d-9577-3d1469cc51c3.JPG)
-#### Searchbar
-- show-search.component contains the search bar functionality
 ##### Responsive search bar
 - search bar changes color when focused, and label migrates to the top of the input field
 - page is styled using Angular Material, along with custom styling
