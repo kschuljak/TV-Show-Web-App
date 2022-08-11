@@ -10,7 +10,8 @@
 - composed of two main components:  show-search.component & search-display.component
 ![mtdb1](https://user-images.githubusercontent.com/47723396/183992434-b21917a9-1526-434d-9577-3d1469cc51c3.JPG)
 
-- Responsive search bar
+## Responsive search bar
+- page is styled using Angular Material, along with custom styling
 ![mtdb4](https://user-images.githubusercontent.com/47723396/183993064-b2e20cdd-3c86-47e4-8c8f-8b0971c2ecb9.png)
 
 - Results display
