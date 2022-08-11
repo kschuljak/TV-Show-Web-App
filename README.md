@@ -43,7 +43,8 @@ export class ShowSearchComponent implements OnInit {
 }
 ```
 - example of JSON returned from API call
-![tvmazeapijsonexample](https://user-images.githubusercontent.com/47723396/184259528-248ecadc-6a0f-46e7-83f7-a61093280959.JPG)
+![jsonapitvmaze](https://user-images.githubusercontent.com/47723396/184259784-73c9b141-9cd6-4b1e-b917-4645fa40fcb0.JPG)
+
 
 ### itv-search-data.ts
 - interface for how the json data is received from TVMAZE API
