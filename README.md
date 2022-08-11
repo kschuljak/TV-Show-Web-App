@@ -9,12 +9,12 @@
 ### show-search.component 
 - contains the website title and searchbar functionality
 ![mtdb1](https://user-images.githubusercontent.com/47723396/183992434-b21917a9-1526-434d-9577-3d1469cc51c3.JPG)
-##### Responsive search bar
-- search bar changes color when focused, and label migrates to the top of the input field
-- page is styled using Angular Material, along with custom styling
+- ##### Responsive search bar
+-- search bar changes color when focused, and label migrates to the top of the input field
+-- page is styled using Angular Material, along with custom styling
 ![mtdb4](https://user-images.githubusercontent.com/47723396/183993064-b2e20cdd-3c86-47e4-8c8f-8b0971c2ecb9.png)
-##### Form control
-- form control requires 2 or more characters before API is called, otherwise error message is displayed
+-##### Form control
+-- form control requires 2 or more characters before API is called, otherwise error message is displayed
 ![mtdberror](https://user-images.githubusercontent.com/47723396/184047389-19b1f0ca-7e82-4270-8235-9d43ecd68889.JPG)
 
 ### search-display.component 
