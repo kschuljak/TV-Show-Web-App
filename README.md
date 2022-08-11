@@ -16,5 +16,23 @@
 ![mtdb3](https://user-images.githubusercontent.com/47723396/183992949-9ba973e0-da97-43db-b331-41201d0870f6.JPG)
 
 - Error message
+- Form control requires 2 or more characters before API is called
+```ts
+export class ShowSearchComponent implements OnInit {
+
+  @Output() searchEvent = new EventEmitter<string>();
+  search = new FormControl('', [Validators.minLength(2)]);
+ 
+  constructor() {}
+
+  ngOnInit(): void {
+    this.search.valueChanges.pipe(debounceTime(1000)).subscribe((searchValue: string) => {
+      if (!this.search.invalid) {
+          this.searchEvent.emit(searchValue)
+      }
+    });
+  }
+}
+```
 ![mtdb2](https://user-images.githubusercontent.com/47723396/183993658-3a214603-6a45-4464-88ce-637d6a75850f.JPG)
 
