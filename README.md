@@ -19,7 +19,7 @@
 - search-display.component is updated using the json data returned from the API call after a valid search
 ![mtdb3](https://user-images.githubusercontent.com/47723396/183992949-9ba973e0-da97-43db-b331-41201d0870f6.JPG)
 
-## Form Control
+## Form control
 - Form control requires 2 or more characters before API is called, otherwise error message is displayed
 - API is called after a one second delay, set by debounceTime
 ```ts
