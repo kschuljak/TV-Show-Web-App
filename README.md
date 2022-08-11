@@ -59,6 +59,7 @@ private transformToItvsearch(data: ITvSearchData){
       showGenres: data.genres.map(x => " " + x),
       scheduleTime: data.schedule.time,
       scheduleDays: data.schedule.days.map(x => " " + x)
+      // ... (etc - code omitted for example) ...
    }
 }
 ```
