@@ -3,10 +3,11 @@
 - MongoDB, Express, Angular, Node
 - Utilizes TVMAZE API to search for show information ([tvmaze.com/api](https://www.tvmaze.com/api))
 
-## Examples
 
 ## Homepage
-- composed of two main components: (1) show-search.component & (2) search-display.component
+- composed of two main components
+- 1) show-search.component contains the page title and searchbar
+- 2) search-display.component displays the information returned from the API call
 ![mtdb1](https://user-images.githubusercontent.com/47723396/183992434-b21917a9-1526-434d-9577-3d1469cc51c3.JPG)
 
 ## Responsive search bar
