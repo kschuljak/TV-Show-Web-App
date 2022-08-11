@@ -16,10 +16,8 @@
 ![mtdb4](https://user-images.githubusercontent.com/47723396/183993064-b2e20cdd-3c86-47e4-8c8f-8b0971c2ecb9.png)
 
 ## API Interface
-- uses two main interfaces
-- 1) itv-search-data.ts shows how the json data is recieved from the API
-- 2) itvsearch.ts shows how we want the json data to be displayed on our webpage
 ### itv-search-data.ts
+- shows how the json data is received from the API
 ```ts
 export interface ITvSearchData {    
     name: string,
@@ -33,6 +31,7 @@ export interface ITvSearchData {
 }
 ```
 ### itvsearch.ts
+- shows how we want the json data to be displayed on our webpage
 ```ts
 export interface Itvsearch {
    showName: string
