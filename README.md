@@ -5,10 +5,12 @@
 
 
 ## Homepage
-- composed of two main components
-- 1) show-search.component contains the page title and searchbar
-- 2) search-display.component displays the information returned from the API call
 ![mtdb1](https://user-images.githubusercontent.com/47723396/183992434-b21917a9-1526-434d-9577-3d1469cc51c3.JPG)
+- composed of two main components
+### how-search.component 
+- contains the page title and searchbar
+### search-display.component 
+- displays the information returned from the API call
 
 ## Responsive search bar
 - search bar changes color when focused, and label migrates to the top of the input field
