@@ -42,7 +42,8 @@ export class ShowSearchComponent implements OnInit {
   }
 }
 ```
-- ![jsonapitvmaze (2)](https://user-images.githubusercontent.com/47723396/184259992-c0327cb9-9a53-4c91-b77a-38163c0c8644.JPG) JSON data is returned from API call
+![jsonapitvmaze (2)](https://user-images.githubusercontent.com/47723396/184259992-c0327cb9-9a53-4c91-b77a-38163c0c8644.JPG) 
+- JSON data is returned from API call
 
 
 
