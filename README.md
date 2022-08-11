@@ -42,8 +42,8 @@ export class ShowSearchComponent implements OnInit {
   }
 }
 ```
-- example of JSON returned from API call
-![jsonapitvmaze](https://user-images.githubusercontent.com/47723396/184259784-73c9b141-9cd6-4b1e-b917-4645fa40fcb0.JPG)
+- JSON is returned from API call
+- ![jsonapitvmaze](https://user-images.githubusercontent.com/47723396/184259784-73c9b141-9cd6-4b1e-b917-4645fa40fcb0.JPG)
 
 
 ### itv-search-data.ts
