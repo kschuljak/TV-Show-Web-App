@@ -26,14 +26,7 @@ export class SearchDisplayComponent implements OnInit {
       showName: '',
       showStatus: '',
       showGenres: [],
-      showSummary: '',
-      scheduleTime: '',
-      scheduleDays: [],
-      showNetwork: '',
-      showImage: '',
-      showLanguage: '',
-      showRuntime: 0,
-      showRating: 0,
+      // ... (etc - code omitted for example) ...
     };
   }
 
