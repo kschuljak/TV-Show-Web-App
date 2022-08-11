@@ -55,6 +55,8 @@ export class SearchDisplayComponent implements OnInit {
       showName: '',
       showStatus: '',
       showGenres: [],
+      scheduleTime: '',
+      scheduleDays: []
       // ... (etc - code omitted for example) ...
     };
   }
