@@ -44,6 +44,24 @@ export interface Itvsearch {
    // ... (etc - code omitted for example) ...
 }
 ```
+### tvmaze.service.ts
+- connects the two interfaces
+```ts
+getShowInfo(showName: string){
+   return this.httpClient.get<ITvSearchData>
+   (`https://api.tvmaze.com/singlesearch/shows?q=${showName}`)
+   .pipe(map(data => this.transformToItvsearch(data) ))
+}
+private transformToItvsearch(data: ITvSearchData){
+   return {
+      showName: data.name,
+      showStatus: data.status,
+      showGenres: data.genres.map(x => " " + x),
+      scheduleTime: data.schedule.time,
+      scheduleDays: data.schedule.days.map(x => " " + x)
+   }
+}
+```
 ## Results display
 - search-display.component is updated using the json data returned from the API call after a valid search
 ```ts
