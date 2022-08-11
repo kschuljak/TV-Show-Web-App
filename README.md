@@ -93,7 +93,26 @@ private transformToItvsearch(data: ITvSearchData){
 }
 ```
 ### app.component.ts
-- the parent component 
+- holds the current result of the API call
+```ts
+import { Itvsearch } from './itvsearch';
+import { TvmazeService } from './tvmaze.service';
+// ... (code omitted for example) ...
+   currentResult: Itvsearch = {
+      showName: '',
+      showStatus: '',
+      showGenres: [],
+      scheduleTime: '',
+      scheduleDays: []
+      // ... (etc - code omitted for example)
+   }
+   constructor(private tvmazeService: TvmazeService){}
+   doSearch(searchValue: string){
+      const userInput = searchValue;
+      this.tvmazeService.getShowInfo(userInput)
+      .subscribe((data: Itvsearch) => this.currentResult = data) 
+   } // ... (code omitted for example) ...
+```
 
 
 
