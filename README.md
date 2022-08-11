@@ -6,7 +6,6 @@
 
 ## Homepage
 ![mtdb1](https://user-images.githubusercontent.com/47723396/183992434-b21917a9-1526-434d-9577-3d1469cc51c3.JPG)
-composed of two main components
 ### show-search.component 
 - contains the page title and searchbar
 ### search-display.component 
