@@ -20,7 +20,8 @@
 ![mtdb3](https://user-images.githubusercontent.com/47723396/183992949-9ba973e0-da97-43db-b331-41201d0870f6.JPG)
 
 ## Form control
-- Form control requires 2 or more characters before API is called, otherwise error message is displayed
+- show-search.component contains the search bar functionality
+- form control requires 2 or more characters before API is called, otherwise error message is displayed
 - API is called after a one second delay, set by debounceTime
 ```ts
 export class ShowSearchComponent implements OnInit {
