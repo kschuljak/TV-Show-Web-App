@@ -19,7 +19,7 @@
 
 ## API Interface
 ### itv-search-data.ts
-- shows how the json data is received from the API
+- shows how the json data is received from TVMAZE API
 ```ts
 export interface ITvSearchData {    
     name: string,
