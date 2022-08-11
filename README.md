@@ -15,8 +15,8 @@
 - Results display
 ![mtdb3](https://user-images.githubusercontent.com/47723396/183992949-9ba973e0-da97-43db-b331-41201d0870f6.JPG)
 
-- Error message
-- Form control requires 2 or more characters before API is called
+## Form Control
+- Form control requires 2 or more characters before API is called, otherwise error message is displayed
 ```ts
 export class ShowSearchComponent implements OnInit {
 
