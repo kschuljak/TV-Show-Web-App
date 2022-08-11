@@ -17,6 +17,29 @@
 
 ## Results display
 - search-display.component is updated using the json data returned from the API call after a valid search
+```ts
+export class SearchDisplayComponent implements OnInit {
+ 
+  @Input() current: Itvsearch
+  constructor() {
+    this.current = {
+      showName: '',
+      showStatus: '',
+      showGenres: [],
+      showSummary: '',
+      scheduleTime: '',
+      scheduleDays: [],
+      showNetwork: '',
+      showImage: '',
+      showLanguage: '',
+      showRuntime: 0,
+      showRating: 0,
+    };
+  }
+
+  ngOnInit(): void {}
+}
+```
 ![mtdb3](https://user-images.githubusercontent.com/47723396/183992949-9ba973e0-da97-43db-b331-41201d0870f6.JPG)
 
 ## Form control
