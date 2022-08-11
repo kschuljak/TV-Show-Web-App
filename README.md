@@ -2,7 +2,6 @@
 - TV Show Search App
 - MongoDB, Express, Angular, Node
 - Utilizes TVMAZE API to search for show information ([tvmaze.com/api](https://www.tvmaze.com/api))
-- Styled using Angular Material
 
 ## Examples
 
@@ -11,6 +10,7 @@
 ![mtdb1](https://user-images.githubusercontent.com/47723396/183992434-b21917a9-1526-434d-9577-3d1469cc51c3.JPG)
 
 ## Responsive search bar
+- search bar changes color when focused, and label migrates to the top of the input field
 - page is styled using Angular Material, along with custom styling
 ![mtdb4](https://user-images.githubusercontent.com/47723396/183993064-b2e20cdd-3c86-47e4-8c8f-8b0971c2ecb9.png)
 
