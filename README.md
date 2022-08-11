@@ -15,6 +15,34 @@
 - page is styled using Angular Material, along with custom styling
 ![mtdb4](https://user-images.githubusercontent.com/47723396/183993064-b2e20cdd-3c86-47e4-8c8f-8b0971c2ecb9.png)
 
+## API Interface
+- uses two main interfaces
+- 1) itv-search-data.ts shows how the json data is recieved from the API
+- 2) itvsearch.ts shows how we want the json data to be displayed on our webpage
+### itv-search-data.ts
+```ts
+export interface ITvSearchData {    
+    name: string,
+    genres: [],
+    status: string,
+    schedule: {
+        time: string,
+        days: []
+    },
+    // ... (etc - code omitted for example) ...
+}
+```
+### itvsearch.ts
+```ts
+export interface Itvsearch {
+   showName: string
+   showStatus: string
+   showGenres: Array<string>
+   scheduleTime: string
+   scheduleDays: Array<string>
+   // ... (etc - code omitted for example) ... 
+}
+```
 ## Results display
 - search-display.component is updated using the json data returned from the API call after a valid search
 ```ts
