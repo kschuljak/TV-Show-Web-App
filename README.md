@@ -29,6 +29,7 @@ export interface ITvSearchData {
         time: string,
         days: []
     }
+    // ... (etc - code omitted for example) ...
 }
 ```
 ### itvsearch.ts
@@ -40,6 +41,7 @@ export interface Itvsearch {
    showGenres: Array<string>
    scheduleTime: string
    scheduleDays: Array<string>
+   // ... (etc - code omitted for example) ...
 }
 ```
 ## Results display
