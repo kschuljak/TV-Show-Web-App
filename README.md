@@ -7,10 +7,11 @@
 ## Homepage
 ### show-search.component 
 - contains the page title and searchbar
-### search-display.component 
-- displays the information returned from the API call
 ![mtdb1](https://user-images.githubusercontent.com/47723396/183992434-b21917a9-1526-434d-9577-3d1469cc51c3.JPG)
 
+### search-display.component 
+- displays the information returned from the API call
+![mtdb3](https://user-images.githubusercontent.com/47723396/183992949-9ba973e0-da97-43db-b331-41201d0870f6.JPG)
 
 ## Responsive search bar
 - search bar changes color when focused, and label migrates to the top of the input field
@@ -63,9 +64,6 @@ private transformToItvsearch(data: ITvSearchData){
    }
 }
 ```
-## Results display
-- search-display.component is updated using the json data returned from the API call after a valid search
-![mtdb3](https://user-images.githubusercontent.com/47723396/183992949-9ba973e0-da97-43db-b331-41201d0870f6.JPG)
 
 ## Form control
 - show-search.component contains the search bar functionality
