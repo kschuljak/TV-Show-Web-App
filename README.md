@@ -2,7 +2,7 @@
 - TV Show Search App
 - MongoDB, Express, Angular, Node
 - TVMAZE REST API ([tvmaze.com/api](https://www.tvmaze.com/api))
-- https://youtu.be/qjAyX35LYO4
+- Video of website presentation at https://youtu.be/qjAyX35LYO4
 
 
 ## Homepage
