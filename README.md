@@ -49,7 +49,7 @@ export class ShowSearchComponent implements OnInit {
 
 
 ### itv-search-data.ts
-- interface for how the json data is received from TVMAZE API
+- interface for how the json data is received from TVmaze API
 ```ts
 export interface ITvSearchData {    
     name: string,
