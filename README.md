@@ -1,7 +1,7 @@
 # MTDB: Movie & TV Database
 - TV Show Search App
 - MongoDB, Express, Angular, Node
-- TVMAZE REST API ([tvmaze.com/api](https://www.tvmaze.com/api))
+- TVmaze REST API ([tvmaze.com/api](https://www.tvmaze.com/api))
 - Video of website presentation at https://youtu.be/qjAyX35LYO4
 
 
