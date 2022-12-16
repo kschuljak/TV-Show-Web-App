@@ -63,7 +63,7 @@ export interface ITvSearchData {
 }
 ```
 ### itvsearch.ts
-- interface for how we want the json data to be displayed on our webpage
+- interface for how the json data is displayed on the webpage
 ```ts
 export interface Itvsearch {
    showName: string
